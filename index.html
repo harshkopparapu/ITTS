@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body style="background-image: url(background.png);background-repeat: no-repeat;background-size: cover;">
+
+ <div class="topnav">
+  <a href="#profile" ><img src="profilelogo.png" width="50" height="50" align=right style="padding-left: 100px; padding-top: 5px;"></a>
+  <a class="italic" href="#support">Support</a>
+  <a class="italic" href="#help">Help</a>
+  <a class="italic" href="#about">About</a>
+  <a class="italic" href="#home">Home</a>
+  <img src="ITTSlogo.png" width=85 height=60 style="float: left;padding-right: 5px;padding-top: 10px;">
+  <p class="italic" style="padding-top: 5px;font-size: 18px;">IMPORTANT<br>THINGS.COM</p>
+ </div>
+
+ <div class="hero">
+  <div class="form-box">
+      <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">login</button>
+          <button type="button" class="toggle-btn" onclick="register()">register</button>
+      </div>
+      <div class="social-icons">
+          <img src="fblogo.png">
+          <img src="fblogo.png">
+          <img src="fblogo.png">
+      </div>
+      <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="user id" required>
+          <input type="password" class="input-field" placeholder="enter password" required>
+          <input type="checkbox" class="check-box"><span>remember password</span>
+          <button type="submit" class="submit-btn">login</button>
+      </form>
+      <form id="register" class="input-group">
+          <input type="text" class="input-field" placeholder="user id" required>
+          <input type="email" class="input-field" placeholder="email id" required>
+          <input type="password" class="input-field" placeholder="enter password" required>
+          <input type="checkbox" class="check-box"><span>i agree to terms and conditions</span>
+          <button type="submit" class="submit-btn">register</button>
+      </form>
+      
+  </div>
+</div>
+<p style="padding-top: 90px;padding-left: 30px;">Important things.com is aweb app which store the data, 
+important information,files,pdfs,images,vedios, cards,photos,etc.. So that when we need things or to see the 
+memmories or to give any xerox to any one. we can easily download the file or thing and submit. We can shown 
+them as a proof. <br><br><br>
+we can even add our favorite things into the web app like voice recordings, songs,... all types of media. It 
+wil be there for permanent in our registered account. <br><br><br>
+In this, you get an organised design. So that you can easily understand the process. You cget unique and 
+different folder for different things, and even you can create a custom folder. You will have a edit option
+to each and every folder. You can edit or change the things when ever you need.</p>
+
+<script>
+  var x =  document.getElementById("login");
+  var y =  document.getElementById("register");
+  var z =  document.getElementById("btn");
+
+  function register(){
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+  }
+
+  function login(){
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0";
+  }
+
+</script>
+
+
+</body>
+</html>
